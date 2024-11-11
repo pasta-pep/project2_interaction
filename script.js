@@ -1,6 +1,6 @@
-function myFunction() {
-    alert("Your journal is saved :)");
-}
+// function myFunction() {
+//     alert("Your journal is saved :)");
+// }
 
 
 const today = new Date();
