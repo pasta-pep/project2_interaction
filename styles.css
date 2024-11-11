@@ -1,0 +1,475 @@
+
+
+/* iphone */
+
+
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+     
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Main container for the card */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 350px;
+    height: 80vh;
+    
+    background-color: white;
+    padding: 50px 0;
+
+}
+
+/* Event card styling */
+.event-card {
+    width: 80%;
+    height: 50%;
+    padding: 20px;
+    background-color: #0000FF; /* Blue color */
+    border-radius: 20px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    /* margin-top: 10px; */
+    
+    
+}
+
+.event-card h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.event-card p {
+    font-size: 16px;
+    border-top: 1px solid white;
+    padding-top: 5px;
+}
+
+.event-card p.notes {
+    font-size: 16px;
+    border-top: 0;
+    padding-top: 5px;
+    font-style: italic;
+    margin-left: 4px;
+}
+
+/* Container for the buttons */
+.buttons-container-iphone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px; /* Add some horizontal padding if needed */
+    margin-top: 20px; /* Space from the event card */
+    gap: 10px;
+
+}
+
+
+#trash_button_iphone {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+#trash_button_iphone img {
+    width: 40px;
+    height: 50px;
+}
+
+
+#create_button_iphone {
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border: 1.5px solid #000;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+
+li {
+  margin-left: 7px;  
+}
+
+
+
+/* ipad */
+ 
+
+body {
+    font-family: Helvetica Neue, sans-serif;
+    /* color: #c81a1a;    */
+    text-align: center;
+  
+  }
+
+
+#journal-text {
+    width: 80%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+#journal-screen {
+    width: 100%;
+    max-width: 1400px;
+    height: 80vh;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+
+#journal_entry {
+    text-align: center;
+    margin: 80px;
+}
+
+#text_holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#journal_entry h1 {
+
+    color: #c81a1a;
+    font-size: 60px;     
+    
+}
+
+#text_holder p{
+    width: 500px;
+    font-family: Helvetica Neue, sans-serif;
+}
+
+#text_holder p,
+#create_button {
+    color: black /* Apply font color */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+    max-width: 1000px;
+    max-height: fit-content;
+    width: 80%;
+    margin:0 auto;
+    
+}
+
+.journal-entry {
+    width: 700px;         
+    max-width: 1000px;    
+    height: 650px;       
+    padding: 3px;       
+    font-size: 16px;     
+    border-radius: 0;  
+    border: 2px solid #0000FF; /* Border color */
+    resize: vertical;    /* Allow vertical resizing */
+    
+}
+
+#buttons-container-ipad {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    width: 100%; 
+
+}
+
+input[type="text"],
+textarea,
+input[type="submit"] {
+    stroke-width: 4px;         /* Removes the outline when focused */
+    border: black;          /* Removes the border */
+    box-shadow: none;      /* Removes any default box shadow */
+   
+}
+
+#title {
+    height: 100px;
+    text-align: center;   
+    font-size: 20px;
+
+
+}
+
+#title::placeholder {
+    color: black;              /* Placeholder text color */
+    opacity: 0.5;               /* Ensures full opacity for placeholder */
+}
+
+
+  
+#create_button_ipad {
+        background: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        width: 150px;
+        margin-top: px;
+        border: 1.5px solid black;
+        margin-right: -270px;
+        
+        }
+  
+  /* Buttons container */
+  .buttons-container-ipad {
+    
+    border: none solid black;
+    display: flex;
+    bottom: 30px;
+    align-items: center;
+    width: 80%;
+    padding: 0 4px; /* Add some horizontal padding if needed */
+    margin-top: 10px; /* Space from the event card */
+    right: 500px;
+    justify-content: space-between;
+    margin-left: -210px;
+    
+   
+    
+  }
+  
+  #trash_button_ipad{
+    background: none;
+      border: none;
+      padding: 1px;
+      margin-left: -500;
+      
+  }
+  /* Trash button styling */
+  #trash_button_ipad img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+
+
+    /* desktop */
+
+
+    /*
+body {
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center; 
+    padding-left: 60px;
+    padding-top: 60px; 
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Helvetica Neue Roman', sans-serif; 
+  }   */
+   
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    transform: translateY(-80px); 
+    border: 1.4px solid black;
+    background-color: #ffffff;
+    /* gap: 1px;  */
+    width: 89%;
+    height: 77vh;
+    padding-top: 50px;
+    padding: 0;
+    border-radius: px; 
+    position: relative; 
+    top: 10px;
+    left: 50px; 
+    
+    }
+   
+#create_button {
+    
+      background:white;
+      border-radius: 20px;
+      padding: 10px;
+      bottom: 50px;
+      right: 50px;
+      text-align: center;
+      width: 150px;
+      border: 1.5px solid #000;
+      font-family: Helvetica, sans-serif;
+      
+      }
+    
+    
+#buttons-container_desktop {
+      /* position: absolute; */
+      border: none solid black;
+      display: flex;
+      bottom: 20px;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      padding: 0 90px; /* Add some horizontal padding if needed */
+      margin-top: -50px; /* Space from the event card */
+      
+      
+    }
+  
+  
+  .calendar-container{
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      flex-direction: row;
+      align-items: stretch;
+      margin-right: 100px;
+  }
+  
+  
+  .time-label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 90px; 
+    gap: 94px;
+    color: hsl(0, 0%, 0%);
+    border-radius: 5px;
+    padding:25px; 
+    width: 90%;
+    z-index: 1000;
+    padding-bottom: 100px;   
+  }
+  
+  
+  
+  .time-label > div {
+    padding: 3px;
+  }   
+  
+  .minute-table {
+    display: flex;
+    flex-direction: column; /* Stacks the child elements vertically */
+    gap:1px;
+    align-items: center;
+    margin-top: 50px;
+    
+  }
+  
+  .minute-table > div {
+    margin-bottom: 100px; /* Adjust the value as needed */
+  }
+  
+  #date-time{
+    position: absolute;
+    top: 116px;
+    right: 30px;
+    font-size: 18px;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border: 1.5px solid #000;
+    font-family: Helvetica, sans-serif;
+    
+  }
+  
+  .event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  background-color: blue;
+  padding: 10px;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-size: 15px;
+  border: 1px solid black;
+  }
+  
+  /* Styles for empty boxes */
+  .empty-box {
+  border: 1px solid black; 
+  outline: 1px solid black; 
+  }
+  
+  /* Grid positions for events */
+  #event1 { grid-row: 1 / 2; grid-column: 2 / 3; }
+  #event2 { grid-row: 1 / 2; grid-column: 4 / 5; }
+  #event3 { grid-row: 3 / 4; grid-column: 4 / 5; }
+  #event4 { grid-row: 4 / 5; grid-column: 6 / 7; }
+  #event5 { grid-row: 5 / 6; grid-column: 6 / 7; }
+  #event6 { grid-row: 6 / 7; grid-column: 8 / 9; }
+  
+  
+  #trash_button_desktop {
+    background: none;
+      border: none;
+      padding: 0;
+      margin-left: 20px;
+  }
+
+  #trash_button_desktop img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+
+
+
+@media only screen and (max-width:600px) {
+    .container-iphone {
+        display: block;
+    }
+
+    .container-ipad, .container-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .container-ipad {
+        display: block;
+    }
+
+    .container-iphone, .container-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 3000px) {
+    .container-desktop {
+        display: block;
+    }
+
+    .container-iphone, .container-ipad {
+        display: none;
+    }
+}
+
+  
