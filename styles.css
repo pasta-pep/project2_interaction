@@ -393,6 +393,7 @@ body {
     text-align: center;
     border: 1.5px solid #000;
     font-family: Helvetica, sans-serif;
+    z-index: 99;
     
   }
   
